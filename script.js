@@ -35,7 +35,7 @@ e.preventDefault();
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true, 
-mobile: {
+smartphone: {
        smooth: true
    }
 });
