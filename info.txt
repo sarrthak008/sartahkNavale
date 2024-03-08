@@ -1,0 +1,5 @@
+faint pink show shading div: `#FFD1FF`
+syk blue: `#8FD7EF`
+dark pink: #F06992
+shading orange: #FEEDDB
+font GILLY roy,
