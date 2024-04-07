@@ -499,78 +499,92 @@ justify-content: space-around;
 }
 
 
-#last-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    overflow: hidden;
-}
-
-#last-container #main-circle{
+#screen{
     height: 30vh;
-    width: 35vw;
-    border-radius: 50%;
+    width: 90vw;
+    border: 1px solid black;
     position: relative;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 10vh;
+    border-radius: 7px;
 }
 
-
-#circle1{
+#dino{
+    height: 9vh;
+    width: 10vw;
     position: absolute;
-    height: 150px;
-    top: 0;
-    left: 15%;
-    width: 150px;
-    border-radius: 50%;
-    border: 9px solid transparent;
-    animation: animate 3s linear infinite;
-    border-top-color:#7ecbef;  
-  filter: drop-shadow(0 0 10px #7ecbef) drop-shadow(0 0 30px #7ecbef)
-  drop-shadow(0 0 50px #7ecbef);
+    left: 10%;
+    bottom: 10%;
+    z-index: 10;
 }
 
-
-#circle2{
-    position: absolute;
-    height: 150px;
-    top: 10;
-    right: 20%;
-    width: 150px;
-    border-radius: 50%;
-    border: 9px solid transparent;
-    animation: animate 3s linear infinite;
-     border-bottom-color:#f3f381 ;
-     
-  filter: drop-shadow(0 0 10px #f3f381 ) drop-shadow(0 0 30px #f3f381 )
-  drop-shadow(0 0 50px #f3f381 );
+#dino img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    user-select: none;
 }
 
-
-#circle3{
+#thred-container{
+    height:10vh;
+    width: 100%;
     position: absolute;
-    height: 150px;
-    bottom: 0%;
-    left: 31%;
-    width: 150px;
-    animation: animate 3s linear infinite;
-    border-radius: 50%;
-    border: 9px solid transparent;
-    border-left-color:#f37da0 ;
+    bottom: 10%;
+    display: flex;
+    gap:15vw;
+    align-items: end;
+    justify-content: space-evenly;
+    border-bottom: 1px dotted black;
+}
+
+#thred-container .thred-design{
+    height: 10vh;
+    width: 10vw;
+}
+
+.thred-design img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    user-select: none;
+}
+
+#building{
     
-  filter: drop-shadow(0 0 10px #f37da0 ) drop-shadow(0 0 30px #f37da0 )
-  drop-shadow(0 0 50px #f37da0 );
+    position: absolute;
+    animation: moving 7s linear infinite;
+}
+
+#short-tree{
+    position: absolute;
+    animation: moving 5s linear infinite;
+}
+
+#tree{
+    position: absolute;
+    left: 20%;
+    animation: moving 10s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        left: 100%;
     }
+    50%{
+        left: 0%;
+    }
+   
+    100%{
+        left: -100%;
+    }
+}
 
 
 
-@keyframes animate {
-    0% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
+
 
 #last-txt{
     width: 100vw;

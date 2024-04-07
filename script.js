@@ -52,3 +52,7 @@ const scroll = new LocomotiveScroll({
 });
 
 
+
+///dino game code 
+
+
